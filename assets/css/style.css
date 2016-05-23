@@ -1,5 +1,49 @@
+.navbar-default
+{
+	background-color: #05dfca;
+	display: inline-block;
+	text-align: center;
+}
 
+.container
+{
 
+}
+
+.panel-default
+{
+	text-align: center;
+}
+
+.page-header
+{
+	text-align: center;
+}
+
+#subName
+{
+	font-size: 20px;
+	font-family: cursive;
+	margin-top: 10px;
+	color: #ff2d57;
+}
+
+#subName1
+{
+	font-family: cursive;
+	margin-top: 30px;
+	color: #337ab7;
+}
+
+.jumbotron
+{
+	text-align: center;
+}
+
+#guessedLetters
+{
+	text-align: center;
+}
 
 
 
