@@ -1,23 +1,51 @@
 
 var correctGuesses = 0;
+
 var wrongGuesses = 0;
-var guessesLeft = 5;
+
+var guessesLeft = 6;
+
+var dashArray = [];
+
+var letter = "";
 
 var gamesList = ["punchout", "mariobros", "legendofzelda", "contra", "donkeykong", 
 				"balloonfight", "bomberman", "excitebike", "twinbee", "xevious"];
 
-document.onkeyup = function(event) {
-	var letter = String.fromCharCode(event.keyCode).toLowerCase();
-	document.getElementByClass("btn-primary").innerHTML = correctGuesses;
+var randomIndex = gamesList[Math.floor(Math.random() * gamesList.length)];
 
+console.log(randomIndex);
 
+var dashes = randomIndex.length;
 
+console.log(dashes);
 
-
-
+for(i = dashes; i > 0; i--)
+{
+	letter[i] = + "-";
+	console.log(letter);
 }
 
+document.getElementById("dashes").innerHTML = letter;
 
+
+
+//document.getElementById("dashes").innerHTML = dashes;
+
+
+
+
+
+
+
+
+
+
+
+
+//var rand = myArray[Math.floor(Math.random() * myArray.length)];
+
+//	document.getElementById("correctGuesses").innerHTML = correctGuesses;
 
 
 
@@ -35,7 +63,7 @@ document.onkeyup = function(event) {
 //	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
 
-var randomGame = gameList[Math.floor(Math.random() * gamesList.length)];
+
 
 var activeGame = gameList[3];
 
