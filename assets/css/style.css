@@ -7,7 +7,12 @@
 
 #dashes
 {
-	font-size: 50px;
+	color: #d2cfca;
+}
+
+#secretWord
+{
+	color: white;
 }
 
 .container
@@ -40,15 +45,16 @@
 	color: #337ab7;
 }
 
-.jumbotron
+.jumbotron h1
 {
+	font-size: 30px;
 	text-align: center;
 }
 
 
 #guessedLetters
 {
-	text-align: center;
+	
 }
 
 
