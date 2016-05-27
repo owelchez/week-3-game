@@ -14,9 +14,10 @@ var randomIndex = gamesList[Math.floor(Math.random() * gamesList.length)];
 
  document.getElementById("secretWord").innerHTML = randomIndex;       
 
-document.onkeyup = function(event) {
+$(document).on('keyup', function (event) {
+        alert('you pressed: ' + event.keyup);
+    });
 
-		};
 var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
 
