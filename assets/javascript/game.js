@@ -1,32 +1,60 @@
-
-var correctGuesses = 0;
-
-var wrongGuesses = 0;
-
-var guessesLeft = 6;
-
-var dashArray = [];
-
 var gamesList = ["punchout", "mariobros", "legendofzelda", "contra", "donkeykong", 
 				"balloonfight", "bomberman", "excitebike", "twinbee", "xevious"];
 
-var randomIndex = gamesList[Math.floor(Math.random() * gamesList.length)];
+var correctGuesses = [];
 
- document.getElementById("secretWord").innerHTML = randomIndex;       
+var wrongGuesses;
 
-$(document).on('keyup', function (event) {
-        alert('you pressed: ' + event.keyup);
-    });
+var allowedGuesses = 13;
 
-var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+var letter;
+
+var word = gamesList[Math.floor(Math.random() * gamesList.length)];
+
+	for( var i = 0; i < word.length; i++)
+	{
+		correctGuesses += '_ ';
+	}
+
+	document.getElementById('secretWord').innerHTML = correctGuesses;
+
+document.onkeyup = function(event) {
+var userInput = String.fromCharCode(event.keyCode).toLowerCase();
+	alert("You've pressed " + userInput);
 
 
 
 
-//document.getElementById("dashes").innerHTML = dashes;
+
+}
+
+/**************************************/
+
+
+
+/**************************************/
 
 
 
 
-//document.onkeyup = function(event) {
-//	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+
+
+
+
+
+
+
+
+/*function guessLetter(letter)
+{
+	if(word.indexOf(letter) === -1)//letter is not in the word
+		// increment guesses,
+}
+*/
+
+//document.getElementById("").innerHTML =  ;
+
+
+
+
+
